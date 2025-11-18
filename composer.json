@@ -1,0 +1,56 @@
+{
+    "name": "fabianbartsch/mcp-docs",
+    "description": "Automatic MCP server documentation generator for Laravel",
+    "homepage": "https://github.com/fabianbartsch/mcp-docs",
+    "support": {
+        "issues": "https://github.com/fabianbartsch/mcp-docs/issues",
+        "source": "https://github.com/fabianbartsch/mcp-docs"
+    },
+    "authors": [
+        {
+            "name": "Fabian Bartsch",
+            "email": "mail@fabianbartsch.com"
+        }
+    ],
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "mcp",
+        "model-context-protocol",
+        "documentation",
+        "api-docs"
+    ],
+    "require": {
+        "php": "^8.1|^8.2",
+        "illuminate/http": "^10.0|^11.0|^12.0",
+        "illuminate/support": "^10.0|^11.0|^12.0",
+        "illuminate/view": "^10.0|^11.0|^12.0",
+        "illuminate/routing": "^10.0|^11.0|^12.0",
+        "laravel/mcp": "^0.1.0 || ^0.2.0 || ^0.3.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0",
+        "phpunit/phpunit": "^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "FabianBartsch\\McpDocs\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FabianBartsch\\McpDocs\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "FabianBartsch\\McpDocs\\Providers\\McpDocsServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
+
